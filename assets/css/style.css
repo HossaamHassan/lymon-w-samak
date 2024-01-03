@@ -2,6 +2,7 @@
 :root {
   --main-color: #ff8700;
   --sec-color: #1a2238;
+  --third-color: #1E456C;
 }
 * {
   padding: 0;
@@ -26,6 +27,9 @@ p {
 }
 /* End Global Rules */
 /* Start Carousel */
+.carousel {
+  margin-bottom: 13rem;
+}
 .carousel .carousel-item {
   height: 85vh;
 }
@@ -37,6 +41,54 @@ p {
     height: 100%;
     object-fit: cover;
   }
+}
+.carousel .social-icons {
+  top: 109%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+}
+.carousel .social-icons .pic {
+  background-color:  rgb(247, 247, 247);
+  border-radius: 50%;
+  padding: 10px;
+  width: fit-content;
+}
+.carousel .social-icons .head p {
+  color: var(--sec-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.carousel .social-icons .head span {
+  color: var(--main-color);
+}
+.carousel .social-icons .pic img {
+  width: 100px;
+}
+.carousel .social-icon {
+  height: 50px;
+  width: 50px;
+  display: block;
+  float: left;
+  background: var(--third-color);
+  border-radius: 50%;
+  position: relative;
+  color: white;
+  font-size: 26px;
+}
+.carousel a:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+.carousel ul {
+  padding: 0;
+}
+.carousel ul .site-link {
+  color: white;
+}
+.carousel ul .site-link:hover {
+  background-color: unset;
+  color: var(--main-color);
 }
 /* End Carousel */
 /* Start Pricing */
@@ -79,6 +131,7 @@ p {
 .content .menu .pic {
   width: 356px;
   height: 200px;
+  border-bottom: 1px solid #ddd;
 }
 .content .menu .pic .seller {
   top: 5%;

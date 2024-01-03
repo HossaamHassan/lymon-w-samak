@@ -54,41 +54,60 @@
     </nav>
     <!-- End Navbar -->
     <!-- Start Carousel -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/slider-1.png" class="d-block w-100" alt="..." />
+    <div id="carouselExampleFade" class="carousel slide carousel-fade position-relative">
+      <div id="carouselExampleAutoplaying" class="carousel slide pointer-event" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img  src="./img/slider-1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/slider-2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img  src="./img/slider-3.png" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="./img/slider-2.png" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="./img/slider-3.png" class="d-block w-100" alt="..." />
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="social-icons position-absolute d-flex flex-column gap-3 align-items-center">
+        <div class="heading d-flex flex-column align-items-center justify-content-center ">
+          <div class="pic">
+            <img src="./img/logo.png" alt="" class="mw-100">
+          </div>
+          <div class="head">
+            <p>ليمون <span>و</span> سمك</p>
+          </div>
+        </div>
+          <ul class="d-flex gap-3">
+            <a target="_blank" href="https://www.facebook.com/Lymun.w.Samak?mibextid=ZbWKwL" class="d-flex align-items-center justify-content-center social-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/lymun_w_samak?igsh=ZGNjOWZkYTE3MQ==" class="d-flex align-items-center justify-content-center social-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://wa.me/966556661538" class="d-flex align-items-center justify-content-center social-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a target="_blank" href="https://www.snapchat.com/add/lymun_samak" class="d-flex align-items-center justify-content-center social-icon">
+              <i class="fa-brands fa-snapchat"></i>
+            </a>
+            <a target="_blank" href="https://vm.tiktok.com/ZSN7aYfas/" class="d-flex align-items-center justify-content-center social-icon">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </ul>
+      </div>
     </div>
     <!-- End Carousel -->
     <p id="list"></p>
     <!-- Start Pricing -->
-    <div class="pricing mt-5">
+    <div class="pricing">
       <div class="container">
         <h2 class="text-center mb-4">قائمة الاسعار</h2>
         <div class="tabs-container" id="tabsContainer">
@@ -106,7 +125,7 @@
         </div>
         <div class="content active" id="tab1">
           <div class="row">
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu position-relative">
                 <div class="pic">
                   <img  alt="Not Availlable" class="mw-100">
@@ -126,7 +145,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-1.png" alt="" class="mw-100">
@@ -143,7 +162,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-1.png" alt="" class="mw-100">
@@ -160,7 +179,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-1.png" alt="" class="mw-100">
@@ -177,7 +196,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-1.png" alt="" class="mw-100">
@@ -194,7 +213,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-1.png" alt="" class="mw-100">
@@ -216,7 +235,7 @@
         
         <div class="content" id="tab2">
           <div class="row">
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu position-relative">
                 <div class="pic">
                   <img src="./img/slider-2.png" alt="" class="mw-100">
@@ -236,7 +255,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-2.png" alt="" class="mw-100">
@@ -253,7 +272,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-2.png" alt="" class="mw-100">
@@ -270,7 +289,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-2.png" alt="" class="mw-100">
@@ -287,7 +306,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-2.png" alt="" class="mw-100">
@@ -304,7 +323,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-2.png" alt="" class="mw-100">
@@ -326,7 +345,7 @@
         
         <div class="content" id="tab3">
           <div class="row">
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu position-relative">
                 <div class="pic">
                   <img src="./img/slider-1.png" alt="" class="mw-100">
@@ -346,7 +365,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-1.png" alt="" class="mw-100">
@@ -363,7 +382,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-1.png" alt="" class="mw-100">
@@ -380,7 +399,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-1.png" alt="" class="mw-100">
@@ -397,7 +416,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-1.png" alt="" class="mw-100">
@@ -414,7 +433,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-1.png" alt="" class="mw-100">
@@ -435,7 +454,7 @@
         </div>
         <div class="content" id="tab4">
           <div class="row">
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu position-relative">
                 <div class="pic">
                   <img src="./img/slider-3.png" alt="" class="mw-100">
@@ -455,7 +474,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-3.png" alt="" class="mw-100">
@@ -472,7 +491,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-3.png" alt="" class="mw-100">
@@ -489,7 +508,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-3.png" alt="" class="mw-100">
@@ -506,7 +525,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-3.png" alt="" class="mw-100">
@@ -523,7 +542,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-center justify-content-center">
               <div class="menu">
                 <div class="pic">
                   <img src="./img/slider-3.png" alt="" class="mw-100">
