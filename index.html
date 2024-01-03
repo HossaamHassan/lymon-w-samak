@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Dosis:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ليمون و سمك | الرئيسية</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="pic" style="width: 60px">
+            <img src="./img/logo.png" alt="" class="mw-100" />
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">قائمة الاسعار</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/slider-1.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider-2.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider-3.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- End Carousel -->
+    <!-- Start Pricing -->
+    <div class="pricing mt-5">
+      <div class="container">
+        <h2 class="text-center mb-4">قائمة الاسعار</h2>
+        <div class="tabs-container" id="tabsContainer">
+            <div class="tab active" onclick="openTab('tab1')">الكل</div>
+            <div class="tab" onclick="openTab('tab2')">الوجبات</div>
+            <div class="tab" onclick="openTab('tab3')">السندوتشات</div>
+            <div class="tab" onclick="openTab('tab4')">الصوانى</div>
+            <div class="tab" onclick="openTab('tab4')">الاسماك</div>
+            <div class="tab" onclick="openTab('tab4')">الشوربة</div>
+            <div class="tab" onclick="openTab('tab4')">الارز والمكرونة</div>
+            <div class="tab" onclick="openTab('tab4')">الاطباق الجانبية</div>
+            <div class="tab" onclick="openTab('tab4')">السلطات</div>
+            <div class="tab" onclick="openTab('tab4')">المشروبات</div>
+            <!-- Add more tabs as needed -->
+        </div>
+        <div class="content active" id="tab1">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="menu position-relative">
+                <div class="pic">
+                  <img src="./img/slider-1.png" alt="" class="mw-100">
+                  <div class="seller position-absolute">
+                    75%
+                  </div>
+                </div>
+                <div class="content-menu px-3 py-2">
+                  <div class="food">
+                    <h5>كيس جمبرى صوص كيجن</h5>
+                    <p class="text-secondary">جمبرى + ذرة + ارز + طحينة + مكرونة + سلطة + سبيط + سنجارى</p>
+                  </div>
+                  <div class="price d-flex gap-1">
+                    <span>60</span>
+                    <span>ر.س</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="menu">
+                <div class="pic">
+                  <img src="./img/slider-1.png" alt="" class="mw-100">
+                </div>
+                <div class="content-menu px-3 py-2">
+                  <div class="food">
+                    <h5>كيس جمبرى صوص كيجن</h5>
+                    <p class="text-secondary">جمبرى + ذرة + ارز + طحينة + مكرونة + سلطة + سبيط + سنجارى</p>
+                  </div>
+                  <div class="price d-flex gap-1">
+                    <span>60</span>
+                    <span>ر.س</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="menu">
+                <div class="pic">
+                  <img src="./img/slider-1.png" alt="" class="mw-100">
+                </div>
+                <div class="content-menu px-3 py-2">
+                  <div class="food">
+                    <h5>كيس جمبرى صوص كيجن</h5>
+                    <p class="text-secondary">جمبرى + ذرة + ارز + طحينة + مكرونة + سلطة + سبيط + سنجارى</p>
+                  </div>
+                  <div class="price d-flex gap-1">
+                    <span>60</span>
+                    <span>ر.س</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="menu">
+                <div class="pic">
+                  <img src="./img/slider-1.png" alt="" class="mw-100">
+                </div>
+                <div class="content-menu px-3 py-2">
+                  <div class="food">
+                    <h5>كيس جمبرى صوص كيجن</h5>
+                    <p class="text-secondary">جمبرى + ذرة + ارز + طحينة + مكرونة + سلطة + سبيط + سنجارى</p>
+                  </div>
+                  <div class="price d-flex gap-1">
+                    <span>60</span>
+                    <span>ر.س</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="menu">
+                <div class="pic">
+                  <img src="./img/slider-1.png" alt="" class="mw-100">
+                </div>
+                <div class="content-menu px-3 py-2">
+                  <div class="food">
+                    <h5>كيس جمبرى صوص كيجن</h5>
+                    <p class="text-secondary">جمبرى + ذرة + ارز + طحينة + مكرونة + سلطة + سبيط + سنجارى</p>
+                  </div>
+                  <div class="price d-flex gap-1">
+                    <span>60</span>
+                    <span>ر.س</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="menu">
+                <div class="pic">
+                  <img src="./img/slider-1.png" alt="" class="mw-100">
+                </div>
+                <div class="content-menu px-3 py-2">
+                  <div class="food">
+                    <h5>كيس جمبرى صوص كيجن</h5>
+                    <p class="text-secondary">جمبرى + ذرة + ارز + طحينة + مكرونة + سلطة + سبيط + سنجارى</p>
+                  </div>
+                  <div class="price d-flex gap-1">
+                    <span>60</span>
+                    <span>ر.س</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="content" id="tab2">
+            <h2>Content for Tab 2</h2>
+            <p>This is the content for Tab 2.</p>
+        </div>
+        
+        <div class="content" id="tab3">
+            <h2>Content for Tab 3</h2>
+            <p>This is the content for Tab 3.</p>
+        </div>
+        <div class="content" id="tab4">
+            <h2>Content for Tab 4</h2>
+            <p>This is the content for Tab 4.</p>
+        </div>
+        <!-- Add more content sections corresponding to tabs -->
+    </div>
+    <!-- End Pricing -->
+    <!-- Start Contact -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d463.7358641798901!2d39.1500342!3d21.5903369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3db25c9977455%3A0x751be827e339b952!2z2YTZitmF2YjZhiDZiCDYs9mF2YM!5e0!3m2!1sar!2seg!4v1704295447804!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <section class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="ftco-footer d-flex gap-4 flex-column">
+              <div class="pic">
+                <img src="./img/logo.png" alt="">
+              </div>
+              <ul class="social-icons d-flex gap-3">
+                <a target="_blank" href="https://www.facebook.com/Lymun.w.Samak?mibextid=ZbWKwL" class="d-flex align-items-center justify-content-center social-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/lymun_w_samak?igsh=ZGNjOWZkYTE3MQ==" class="d-flex align-items-center justify-content-center social-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a target="_blank" href="https://wa.me/966556661538" class="d-flex align-items-center justify-content-center social-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a target="_blank" href="https://www.snapchat.com/add/lymun_samak" class="d-flex align-items-center justify-content-center social-icon">
+                  <i class="fa-brands fa-snapchat"></i>
+                </a>
+                <a target="_blank" href="https://vm.tiktok.com/ZSN7aYfas/" class="d-flex align-items-center justify-content-center social-icon">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 wd-10 mb-3">
+            <div class="ftco-footer d-flex gap-4 flex-column">
+              <h2 class="text-uppercase">الروابط</h2>
+              <ul class="d-flex flex-column gap-3">
+                <li>
+                  <a href="/index.html" class="site-link"> الرئيسية </a>
+                </li>
+                <li>
+                  <a href="/About.html" class="site-link"> قائمة الاسعار </a>
+                </li>
+                <li>
+                  <a href="/our-board.html" class="site-link">اطلب الان</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="ftco-footer">
+              <h2 class="text-uppercase">هل لديك اسئلة ؟</h2>
+              <div class="info pt-4 d-flex flex-column gap-4">
+                <div class="info-one d-flex align-items-center gap-3 text-white">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>
+                    2672 كنوز العلم، حي السلام، جدة 23437، المملكة العربية السعودية
+                  </p>
+                </div>
+                <div class="info-one d-flex align-items-center gap-3 text-white">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>966556661538</p>
+                </div>
+                <div class="info-one d-flex align-items-center gap-3 text-white">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>Lymun.w.samak@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-white">
+          <p class="text-center">
+             ليمون و سمك جميع الحقوق محفوظة © 2024
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
