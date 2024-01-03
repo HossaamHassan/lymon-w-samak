@@ -72,6 +72,13 @@ p {
 
 .content .menu {
   background-color: rgb(247, 247, 247);
+  width: 356px;
+  height: 336px;
+  overflow: hidden;
+}
+.content .menu .pic {
+  width: 356px;
+  height: 200px;
 }
 .content .menu .pic .seller {
   top: 5%;
